@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+     <style type="text/css">
+    html { height: 100% }
+    body {
+      height: 100%;
+      text-align: center;
+      margin: 40px auto;
+      max-width: 650px;
+      line-height: 1.6;
+      font-size: 18px;
+      color: black;
+      font-weight: bold;
+      padding: 0 10px;
+      background-color: pink;
+      font-family: 'Poppins', sans-serif;
+      
+      }
+         a{
+           text-decoration: none;
+         }
+
+       li a:hover{
+      text-decoration: underline;
+        }
+      .pas_point { list-style-type: none;}
+
+  </style>
+  </head>
+  <body>
+    <h1>Welcome to Challow Gossip </h1>
+    <a href="/gossips/new/">Envoie de la pure</a>
+    <br>
+      <h2>Derniers Gossips</h2>
+        <ul class="pas_point">
+      <% gossips.each_with_index do |gossip, index| %>
+        <li>
+          <a href="/gossip/<%=index%>">Gossips n°<%=index + 1 %></a>
+          </li>
+      <% end %>
+    </ul class="pas_point">
+    <h2> You Know You Love Me. XOXO, Gossip Girl. </h2>
+    </body>
+</html>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Édite ton potin</title>
+ <style type="text/css">
+    html { height: 100% }
+    body {
+      height: 100%;
+      text-align: center;
+      margin: 40px auto;
+      max-width: 650px;
+      line-height: 1.6;
+      font-size: 18px;
+      color: black;
+      font-weight: bold;
+      padding: 0 10px;
+      background-color: pink;
+      font-family: 'Poppins', sans-serif;
+      
+      }
+         a{
+           text-decoration: none;
+         }
+
+       li a:hover{
+      text-decoration: underline;
+        }
+      .pas_point { list-style-type: none;}
+
+  </style>
+</head>
+<body>
+    <h1>Retourne donc ta veste</h1>
+    <p>Tu souhaites modifier le potin n°<%= id%></p>
+    <form action='/gossips/<%= id - 1 %>/edit' method='POST'> <!-- Formulaire Edit Gossip-->
+      Change l'auteur :  <input type='text' name='gossip_author' value="<%= gossip.author%>"/><br/>
+      Change le potin : <input type='text' name='gossip_content' value="<%= gossip.content%>"/><br/>
+      <input type='submit'value ='bah bravo'/>
+    <button class="connexion" type="button"><a href="/">Reviens à la page d'accueil</a></button>
+    
+  </body>
+</html>

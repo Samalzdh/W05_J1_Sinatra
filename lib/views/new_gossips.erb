@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Créer un potin</title>
+      <style type="text/css">
+    html { height: 100% }
+    <style type="text/css">
+    html { height: 100% }
+    body {
+      height: 100%;
+      text-align: center;
+      margin: 40px auto;
+      max-width: 650px;
+      line-height: 1.6;
+      font-size: 18px;
+      color: black;
+      font-weight: bold;
+      padding: 50 50px;
+      background-color: pink;
+      font-family: 'Poppins', sans-serif;}
+         a{
+           text-decoration: none;
+         }
+
+       li a:hover{
+      text-decoration: underline;
+        }
+      .pas_point { list-style-type: none;}
+
+ </style>
+  </head>
+  <body>
+    <h1>Crée un potin !</h1>
+    <p>Balance ton potin via le formulaire ci-dessous</p>
+    <form action='/gossips/new/' method='POST'>
+      Kietu :  <input type='text' name='gossip_author'/><br/>
+      Gossip : <input type='text' name='gossip_content'/><br/>
+      <input type='submit'/><button class="connexion" type="button"><a href="/">Reviens à la page d'accueil</a></button>
+    </form>
+  </body>
+</html>
