@@ -18,6 +18,18 @@
       font-family: 'Poppins', sans-serif;
       
       }
+      .header-image {
+    background-image: url('header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 150px;
+}
          a{
            text-decoration: none;
          }
@@ -30,6 +42,7 @@
   </style>
 </head>
 <body>
+  
     <h1>Retourne donc ta veste</h1>
     <p>Tu souhaites modifier le potin n°<%= id%></p>
     <form action='/gossips/<%= id - 1 %>/edit' method='POST'> <!-- Formulaire Edit Gossip-->
